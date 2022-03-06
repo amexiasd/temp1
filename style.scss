@@ -1,10 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
 @import 'colors';
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: large;
 }
 body{
     background: $background;
     color: $letters;
+    font-family: 'Space Mono', monospace;
+}
+.input{
+    background-color: $sec;
+    color: aquamarine;
+    border: 0;
+    padding: 6px;
+    margin:6px;
+    font-size: 1.4rem;
+    border-radius: 8px;
+}
+.button{
+    background-color: rgb(22, 142, 179);
+    padding: 6px;
+    margin: 6px;
+    border: 0;
+    border-radius: 7px;
 }
