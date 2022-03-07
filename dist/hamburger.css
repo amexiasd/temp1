@@ -1,0 +1,15 @@
+nav {
+  background-color: brown;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+span {
+  width: 40px;
+  height: 4px;
+  background: aliceblue;
+  border-color: aquamarine;
+  display: block;
+}
+/*# sourceMappingURL=hamburger.css.map */

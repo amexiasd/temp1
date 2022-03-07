@@ -1,10 +1,66 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+.burger {
+  border: 1px solid #179ec0;
+  border-radius: 4px;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.burger span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background: #179ec0;
+  margin: 6px;
+  z-index: 1;
+}
+
+.burger.open span:nth-child(1) {
+  -webkit-transform: rotate(45deg) translateY(6px) translateX(8px);
+          transform: rotate(45deg) translateY(6px) translateX(8px);
+}
+
+.burger.open span:nth-child(2) {
+  opacity: 0;
+  width: 0px;
+}
+
+.burger.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg) translateY(-6px) translateX(8px);
+          transform: rotate(-45deg) translateY(-6px) translateX(8px);
+}
+
+.burger span {
+  -webkit-transition: all ease-in 150ms;
+  transition: all ease-in 150ms;
+}
+
+nav {
+  padding: 20px;
+  padding-left: 80px;
+  height: 100%;
+  width: 200px;
+  background-color: #24242b;
+  position: absolute;
+  left: -200px;
+}
+
+nav.open {
+  left: 0px;
+}
+
+nav {
+  -webkit-transition: left ease-in 250ms;
+  transition: left ease-in 250ms;
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-size: large;
+  text-decoration: none;
 }
 
 body {
@@ -29,5 +85,23 @@ body {
   margin: 6px;
   border: 0;
   border-radius: 7px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #24242b;
+  padding: 10px;
+}
+
+ul {
+  list-style: none;
 }
 /*# sourceMappingURL=style.css.map */

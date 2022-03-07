@@ -1,0 +1,46 @@
+.burger{
+    border:  1px solid $letters;
+    border-radius: 4px ;
+    padding: 2px ;
+    cursor: pointer;
+   }
+.burger span{
+     display: block;
+     width: 30px;
+     height: 4px;
+     background: $letters;
+     margin: 6px;
+     z-index: 1;
+ }
+
+ .burger.open span:nth-child(1){
+     transform: rotate(45deg) translateY(6px) translateX(8px) ;
+ }
+ 
+ .burger.open span:nth-child(2){
+    opacity: 0; 
+    width: 0px;
+}
+
+.burger.open span:nth-child(3){
+    transform: rotate(-45deg) translateY(-6px) translateX(8px) ;
+}
+
+.burger span{
+    transition:all ease-in 150ms ;
+}
+nav{
+    padding: 20px;
+    padding-left: 80px;
+    height: 100%;
+    width: 200px;
+    background-color: $header;
+    position: absolute;
+    left: -200px;
+}
+nav.open {
+    left: 0px;
+}
+nav{
+transition:left ease-in 250ms;
+}
